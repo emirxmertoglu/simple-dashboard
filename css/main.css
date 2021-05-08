@@ -1,1 +1,179 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url("../font/Graphik-Regular.woff2") format("woff2"), url("../font/Graphik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url("../font/Graphik-Light.woff2") format("woff2"), url("../font/Graphik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url("../font/Graphik-Medium.woff2") format("woff2"), url("../font/Graphik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  font-family: Graphik, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar {
+  width: 252px;
+  background: #4C52BC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar .logo {
+  padding: 36px 0 64px 40px;
+}
+
+.sidebar .logo a {
+  display: block;
+}
+
+.sidebar .logo a img {
+  width: 36px;
+  height: 36px;
+}
+
+.sidebar .menu ul li a {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 40px;
+}
+
+.sidebar .menu ul li a:hover {
+  color: #fff;
+}
+
+.sidebar .menu ul li.active a {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.08)), to(transparent));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.08), transparent);
+}
+
+.sidebar .storage {
+  margin-top: auto;
+  padding: 0 40px 64px;
+}
+
+.sidebar .storage .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .storage .title i {
+  margin-right: 7px;
+}
+
+.sidebar .storage .title .percent {
+  margin-left: auto;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+}
+
+.sidebar .storage .bar {
+  background: #30358A;
+  height: 6px;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+.sidebar .storage .bar span {
+  display: block;
+  height: 6px;
+  border-radius: 6px;
+  background: #F8D9AF;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/*# sourceMappingURL=main.css.map */

@@ -6,10 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Dashboard</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="#"><img src="./img/logo.svg" alt=""></a>
+        </div>
 
+        <nav class="menu">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Teams</a></li>
+            </ul>
+        </nav>
+
+        <div class="storage">
+            <div class="title">
+                <i class="fas fa-cloud"></i>
+                Storage
+                <div class="percent">60%</div>
+            </div>
+            <div class="bar">
+                <span style="width: 60%;"></span>
+            </div>
+        </div>
+    </div>
+    <div class="content">CONTENT</div>
 </body>
 
 </html>
