@@ -47,7 +47,7 @@ body
             font-weight: 500
             align-items: center
             i
-                margin-right: 7px
+                margin-right: 9px
             .percent
                 margin-left: auto
                 font-size: 12px
@@ -67,3 +67,97 @@ body
 // CONTENT
 .content
     flex: 1
+    display: flex
+    .inner
+        flex: 1
+        padding: 32px 70px
+        .search
+            position: relative
+            margin-bottom: 60px
+            input
+                width: 340px
+                height: 44px
+                border-radius: 44px
+                background: rgba(202, 236, 231, .14)
+                border: none
+                padding: 0 40px
+                &:focus
+                    outline: 0
+                &::placeholder
+                    color: #8F94B8
+            label
+                position: absolute
+                top: 0
+                left: 0
+                width: 44px
+                height: 44px
+                display: flex
+                align-items: center
+                justify-content: center
+                color: #B1B4CE
+                i
+                    font-size: 16px
+        .inner-box
+            margin-bottom: 50px
+            .projects
+                display: flex
+                margin: 0 -7px
+                .box
+                    flex: 1
+                    height: 145px
+                    margin: 0 7px
+                    border-radius: 12px
+                    box-sizing: border-box
+                    &.active
+                        background: #F7F8FB
+                    &.empty
+                        border: 2px dashed #E4E8F6
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        flex-direction: column
+                        i
+                            width: 40px
+                            height: 40px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            background: #F7F8FB
+                            color: #4C52BC
+                            border-radius: 50%
+                            margin-bottom: 10px
+                        .text
+                            font-size: 12px
+                            color: #132046
+
+    .right-bar
+        width: 360px
+        padding: 32px 0
+        border-left: 2px solid #F6F7FA
+
+    .content-title
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border-bottom: 1px solid #F6F7FA
+        margin-bottom: 35px
+        padding-bottom: 6px
+        position: relative
+        &::before
+            position: absolute
+            content: ''
+            width: 38px
+            height: 4px
+            background: #C4E2E6
+            border-radius: 4px
+            left: 0
+            bottom: -2px
+        h4
+            font-size: 20px
+            font-weight: 500
+            color: #0E1B42
+        a
+            color: #8186AD
+            i
+                margin-left: 8px
+                font-size: 11px
