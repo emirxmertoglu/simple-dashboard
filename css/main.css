@@ -458,6 +458,13 @@ body {
   width: 360px;
   padding: 32px 46px;
   border-left: 2px solid #F6F7FA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .content .right-bar .profile-bar {
@@ -493,8 +500,13 @@ body {
 }
 
 .content .right-bar .profile-bar .profile span {
+  color: #0E1B42;
   font-weight: 500;
   margin-right: 12px;
+}
+
+.content .right-bar .profile-bar .profile i {
+  color: #0E1B42;
 }
 
 .content .right-bar .inner-box .content-title {
@@ -570,6 +582,40 @@ body {
 
 .content .right-bar .inner-box .activities .activities-container .activities-content img {
   margin-right: 7px;
+}
+
+.content .right-bar .refer-container {
+  position: relative;
+  border: 2px solid #F6F7FA;
+  border-radius: 10px;
+  padding: 20px 20px 0 20px;
+  margin-top: auto;
+}
+
+.content .right-bar .refer-container .close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #B1B4CE;
+}
+
+.content .right-bar .refer-container h4 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.content .right-bar .refer-container h6 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  text-align: center;
+  color: #8186AD;
+}
+
+.content .right-bar .refer-container .refer-img img {
+  display: block;
 }
 
 .content .content-title {
