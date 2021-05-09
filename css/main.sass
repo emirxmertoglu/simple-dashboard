@@ -218,8 +218,69 @@ body
 
     .right-bar
         width: 360px
-        padding: 32px 0
+        padding: 32px 46px
         border-left: 2px solid #F6F7FA
+        .profile-bar
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            .notifications
+                margin-right: 32px
+            .profile
+                display: flex
+                justify-content: center
+                align-items: center
+                img
+                    margin-right: 8px
+                span
+                    font-weight: 500
+                    margin-right: 12px
+        .inner-box
+            .content-title
+                margin-top: 60px
+                h4
+                    font-size: 16px
+            .activities
+                position: relative
+                padding-left: 19px
+                &::before
+                    content: ''
+                    position: absolute
+                    left: 10px
+                    top: 0
+                    width: 2px
+                    height: 100%
+                    background: #F6F7FA
+                    border-radius: 1px
+                .activities-container
+                    position: relative
+                    margin-bottom: 30px
+                    .activities-icon
+                        position: absolute
+                        top: 0
+                        left: -18px
+                    .activities-body
+                        display: flex
+                        justify-content: space-between
+                        align-items: baseline
+                        margin-left: 12px
+                        .text
+                            color: #0E1B42
+                            font-size: 12px
+                            line-height: 20px
+                            letter-spacing: 0.2px
+                            .bold
+                                font-weight: 500
+                        .time
+                            padding-left: 25px
+                            font-size: 11px
+                            line-height: 16px
+                            color: #8186AD
+                    .activities-content
+                        margin-top: 12px
+                        margin-left: 21px
+                        img
+                            margin-right: 7px
 
     .content-title
         display: flex

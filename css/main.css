@@ -456,8 +456,120 @@ body {
 
 .content .right-bar {
   width: 360px;
-  padding: 32px 0;
+  padding: 32px 46px;
   border-left: 2px solid #F6F7FA;
+}
+
+.content .right-bar .profile-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .right-bar .profile-bar .notifications {
+  margin-right: 32px;
+}
+
+.content .right-bar .profile-bar .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .right-bar .profile-bar .profile img {
+  margin-right: 8px;
+}
+
+.content .right-bar .profile-bar .profile span {
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.content .right-bar .inner-box .content-title {
+  margin-top: 60px;
+}
+
+.content .right-bar .inner-box .content-title h4 {
+  font-size: 16px;
+}
+
+.content .right-bar .inner-box .activities {
+  position: relative;
+  padding-left: 19px;
+}
+
+.content .right-bar .inner-box .activities::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #F6F7FA;
+  border-radius: 1px;
+}
+
+.content .right-bar .inner-box .activities .activities-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.content .right-bar .inner-box .activities .activities-container .activities-icon {
+  position: absolute;
+  top: 0;
+  left: -18px;
+}
+
+.content .right-bar .inner-box .activities .activities-container .activities-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-left: 12px;
+}
+
+.content .right-bar .inner-box .activities .activities-container .activities-body .text {
+  color: #0E1B42;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.content .right-bar .inner-box .activities .activities-container .activities-body .text .bold {
+  font-weight: 500;
+}
+
+.content .right-bar .inner-box .activities .activities-container .activities-body .time {
+  padding-left: 25px;
+  font-size: 11px;
+  line-height: 16px;
+  color: #8186AD;
+}
+
+.content .right-bar .inner-box .activities .activities-container .activities-content {
+  margin-top: 12px;
+  margin-left: 21px;
+}
+
+.content .right-bar .inner-box .activities .activities-container .activities-content img {
+  margin-right: 7px;
 }
 
 .content .content-title {
