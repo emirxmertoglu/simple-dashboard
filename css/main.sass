@@ -2,6 +2,9 @@
 @import 'font'
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css')
 
+\:root
+    --color: #4C52BC
+
 html, body
     height: 100%
     font-family: Graphik, sans-serif
@@ -13,7 +16,8 @@ body
 // SIDEBAR
 .sidebar
     width: 252px
-    background: #4C52BC
+    min-width: 252px
+    background: var(--color)
     display: flex
     flex-direction: column
     .logo
@@ -54,7 +58,7 @@ body
                 color: rgba(255, 255, 255, .6)
                 font-weight: normal
         .bar
-            background: #30358A
+            background: rgba(0, 0, 0, .3)
             height: 6px
             border-radius: 6px
             margin-top: 12px
@@ -71,6 +75,7 @@ body
     .inner
         flex: 1
         padding: 32px 70px
+        overflow: auto
         .search
             position: relative
             margin-bottom: 60px
@@ -108,8 +113,56 @@ body
                     margin: 0 7px
                     border-radius: 12px
                     box-sizing: border-box
+                    padding: 20px
                     &.active
                         background: #F7F8FB
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                        .box-top
+                            display: flex
+                            justify-content: space-between
+                            align-items: center
+                            .box-shared
+                                display: flex
+                                img
+                                    width: 20px
+                                    height: 20px
+                                    border-radius: 50%
+                                    margin-left: -8px
+                                    border: 2px solid #F7F8FB
+                        .box-title
+                            display: flex
+                            flex-direction: column
+                            .name
+                                color: #0E1B42
+                                font-weight: 500
+                                margin-bottom: 4px
+                            .task
+                                color: #8186AD
+                                font-size: 12px
+                        .box-bar
+                            display: block
+                            height: 5px
+                            width: 100%
+                            border-radius: 5px
+                            background: #DDE2EF
+                            span
+                                display: block
+                                width: auto
+                                height: 5px
+                                border-radius: 5px
+                                background: var(--color)
+                                position: relative
+                                &::before
+                                    position: absolute
+                                    content: attr(title)
+                                    color: var(--color)
+                                    font-size: 10px
+                                    font-weight: 500
+                                    top: -10px
+                                    right: -10px
+
                     &.empty
                         border: 2px dashed #E4E8F6
                         display: flex
@@ -123,12 +176,45 @@ body
                             align-items: center
                             justify-content: center
                             background: #F7F8FB
-                            color: #4C52BC
+                            color: var(--color)
                             border-radius: 50%
                             margin-bottom: 10px
                         .text
                             font-size: 12px
                             color: #132046
+            .recent
+                ul
+                    li
+                        a
+                            display: flex
+                            align-items: center
+                            height: 64px
+                            padding: 20px
+                            border-radius: 10px
+                            img
+                                margin-right: 13px
+                            h4
+                                color: #0E1B42
+                                flex: 1
+                            .visibility
+                                width: 100px
+                                color: #8186AD
+                                font-size: 12px
+                                text-align: center
+                            .size
+                                width: 100px
+                                color: #8186AD
+                                font-size: 12px
+                                text-align: center
+                            .more
+                                opacity: 0
+                                i
+                                    color: #B1B4CE
+                                    font-size: 16px
+                            &:hover
+                                background: #F4F5FA
+                                .more
+                                    opacity: 1
 
     .right-bar
         width: 360px

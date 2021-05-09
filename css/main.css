@@ -75,6 +75,10 @@ a {
   font-style: normal;
 }
 
+:root {
+  --color: #4C52BC;
+}
+
 html, body {
   height: 100%;
   font-family: Graphik, sans-serif;
@@ -89,7 +93,8 @@ body {
 
 .sidebar {
   width: 252px;
-  background: #4C52BC;
+  min-width: 252px;
+  background: var(--color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,7 +163,7 @@ body {
 }
 
 .sidebar .storage .bar {
-  background: #30358A;
+  background: rgba(0, 0, 0, 0.3);
   height: 6px;
   border-radius: 6px;
   margin-top: 12px;
@@ -185,6 +190,7 @@ body {
       -ms-flex: 1;
           flex: 1;
   padding: 32px 70px;
+  overflow: auto;
 }
 
 .content .inner .search {
@@ -263,10 +269,95 @@ body {
   border-radius: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 20px;
 }
 
 .content .inner .inner-box .projects .box.active {
   background: #F7F8FB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .inner .inner-box .projects .box.active .box-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .inner .inner-box .projects .box.active .box-top .box-shared {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .inner .inner-box .projects .box.active .box-top .box-shared img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: -8px;
+  border: 2px solid #F7F8FB;
+}
+
+.content .inner .inner-box .projects .box.active .box-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .inner .inner-box .projects .box.active .box-title .name {
+  color: #0E1B42;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.content .inner .inner-box .projects .box.active .box-title .task {
+  color: #8186AD;
+  font-size: 12px;
+}
+
+.content .inner .inner-box .projects .box.active .box-bar {
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 5px;
+  background: #DDE2EF;
+}
+
+.content .inner .inner-box .projects .box.active .box-bar span {
+  display: block;
+  width: auto;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--color);
+  position: relative;
+}
+
+.content .inner .inner-box .projects .box.active .box-bar span::before {
+  position: absolute;
+  content: attr(title);
+  color: var(--color);
+  font-size: 10px;
+  font-weight: 500;
+  top: -10px;
+  right: -10px;
 }
 
 .content .inner .inner-box .projects .box.empty {
@@ -299,7 +390,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background: #F7F8FB;
-  color: #4C52BC;
+  color: var(--color);
   border-radius: 50%;
   margin-bottom: 10px;
 }
@@ -307,6 +398,60 @@ body {
 .content .inner .inner-box .projects .box.empty .text {
   font-size: 12px;
   color: #132046;
+}
+
+.content .inner .inner-box .recent ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.content .inner .inner-box .recent ul li a img {
+  margin-right: 13px;
+}
+
+.content .inner .inner-box .recent ul li a h4 {
+  color: #0E1B42;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.content .inner .inner-box .recent ul li a .visibility {
+  width: 100px;
+  color: #8186AD;
+  font-size: 12px;
+  text-align: center;
+}
+
+.content .inner .inner-box .recent ul li a .size {
+  width: 100px;
+  color: #8186AD;
+  font-size: 12px;
+  text-align: center;
+}
+
+.content .inner .inner-box .recent ul li a .more {
+  opacity: 0;
+}
+
+.content .inner .inner-box .recent ul li a .more i {
+  color: #B1B4CE;
+  font-size: 16px;
+}
+
+.content .inner .inner-box .recent ul li a:hover {
+  background: #F4F5FA;
+}
+
+.content .inner .inner-box .recent ul li a:hover .more {
+  opacity: 1;
 }
 
 .content .right-bar {
